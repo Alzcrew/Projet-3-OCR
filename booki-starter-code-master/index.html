@@ -25,15 +25,15 @@
       <!-- Header -->
       <header>
         <nav>
-          <a href="#">
+          <a href="">
             <img src="images/logo/Booki.png" class="logo" alt="logo booki" />
           </a>
           <div class="navbar-container">
             <div class="navbar-container-1">
-              <a href="hebergement=" class="lien-header">Hébergement</a>
+              <a href="#hebergement" class="lien-header">Hébergements</a>
             </div>
             <div class="navbar-container-2">
-              <a href="activites" class="lien-header">Activités</a>
+              <a href="#activite" class="lien-header">Activités</a>
             </div>
           </div>
         </nav>
@@ -41,14 +41,16 @@
 
       <!-- section recherche -->
       <main>
+        <!-- headline -->
         <section class="recherche margin-top">
-          <div id="headline margin-top">
+          <div id="headline">
             <h1 class="section-title">
               Trouvez votre hébergement pour des vacances de rêve
             </h1>
             <p>En plein centre ville ou en pleine nature</p>
           </div>
-          <form action="" method="get" class="margin-top formulaire-recherche">
+          <!-- formulaire de recherche -->
+          <form method="get" class="margin-top formulaire-recherche">
             <div class="icone-map">
               <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
             </div>
@@ -58,28 +60,32 @@
               placeholder="Marseille, France"
               style="text-align: center"
             />
-            <button class="bouton-recherche">Rechercher <i class="fa fa-search" aria-hidden="true"></i></button>
+            <button class="bouton-recherche"><span>Rechercher</span><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
+
+          <!-- filtres -->
           <div class="filtre-recherche" id="margin-top-filtres">
-            <h2>Filtres</h2>
+           <h2>Filtres</h2>
+          <div id="responsive-filtres">
             <ul>
-              <li class="margin-left filtre-bulle margin-top-filtres">
+              <li class="filtre-bulle margin-top-filtres" id="responsive-eco">
                 <i class="fas fa-money-bill-wave"></i>
                 Economique
               </li>
-              <li class="margin-left filtre-bulle margin-top-filtres">
+              <li class="filtre-bulle margin-top-filtres" id="responsive-fami">
                 <i class="fas fa-child"></i>
                 Familial
               </li>
-              <li class="margin-left filtre-bulle margin-top-filtres">
+              <li class="filtre-bulle margin-top-filtres" id="responsive-rom">
                 <i class="fas fa-heart"></i>
                 Romantique
               </li>
-              <li class="margin-left filtre-bulle margin-top-filtres">
+              <li class="filtre-bulle margin-top-filtres" id="responsive-pep">
                 <i class="fa-solid fa-fire"></i>
                 Nos pépites
               </li>
             </ul>
+        </div>
           </div>
           <div class="margin-top info">
             <i class="fas fa-info" aria-hidden="true"></i>
@@ -87,12 +93,12 @@
           </div>
         </section>
 
-<!-- Section Hébergements et les plus populaires -->
+        <!-- Section Hébergements et les plus populaires -->
         <div class="hebergements-and-populaires margin-top">
-            <section class="hebergements">
+            <section class="hebergements" id="hebergement">
                 <h1>Hébergements à Marseille</h1>
                 <div class="hebergements-cards">
-                   <a href=""> <article class="card">
+                   <a href=""> <article class="card" id="mobile-order-1">
                       <img
                         src="./images/hebergements/hotelduport.jpg"
                         alt="Hôtel du port"
@@ -117,7 +123,7 @@
                           </div>
                         </div>
                     </article></a>
-                    <a href=""><article class="card">
+                    <a href="" id="mobile-order-6"><article class="card">
                         <img
                           src="./images/hebergements/hotelchezamina.jpg"
                           alt="Hôtel chez Amina"
@@ -142,7 +148,7 @@
                             </div>
                           </div>
                       </article></a>
-                      <a href=""><article class="card">
+                      <a href="" id="mobile-order-3"><article class="card">
                         <img
                           src="./images/hebergements/hotellesmouettes.jpg"
                           alt="Hôtel les mouettes"
@@ -167,7 +173,7 @@
                             </div>
                           </div>
                       </article></a>
-                      <a href=""><article class="card">
+                      <a href="" id="mobile-order-4"><article class="card">
                         <img
                           src="./images/hebergements/hoteldelamer.jpg"
                           alt="Hôtel de la mer"
@@ -192,7 +198,7 @@
                             </div>
                           </div>
                       </article></a>
-                     <a href=""><article class="card">
+                     <a href="" id="mobile-order-2"><article class="card">
                         <img
                           src="./images/hebergements/canebiereheberg.jpg"
                           alt="Auberge La Canebière"
@@ -217,7 +223,7 @@
                             </div>
                           </div>
                       </article></a>
-                      <a href=""><article class="card">
+                      <a href="" id="mobile-order-5"><article class="card">
                         <img
                           src="./images/hebergements/aubergepanier.jpg"
                           alt="Auberge Le Panier"
@@ -242,7 +248,7 @@
                             </div>
                           </div>
                       </article></a>
-                      <h2 class="margin-top">Afficher plus</h2>
+                      <h2 class="margin-top" id="mobile-order-7">Afficher plus</h2>
                       </div>
             </section>
             <section class="populaires">
@@ -332,29 +338,42 @@
             </section>
           </div>
           <!-- Section activité à Marseille -->
-          <section class="activites margin-top">
+        <section class="activites margin-top" id="activite">
             <h1>Activités à Marseille</h1>
             <div class="activites-cards">
-            <a href=""><article class="card2">
-                <img src="./images/activites/vieuxport.jpg" alt="Vieux port de Marseille">
-                <div class="card-activites-txt"><h3 class="card-title">Vieux-port</h2></div>
-            </article>
-        </a>
-        <a href=""><article class="card2">
-            <img src="./images/activites/pomegues.jpg" alt="Fort de Pomègues">
-            <div class="card-activites-txt"><h3 class="card-title">Fort de Pomègues</h2></div>
-        </article>
-    </a>
-    <a href=""><article class="card2">
-        <img src="./images/activites/calanques.jpg" alt="Parc national des Calanques">
-        <div class="card-activites-txt responsive-tablette"><h3 class="card-title">Parc national des Calanques</h2></div>
-    </article>
-</a>
-<a href=""><article class="card2">
-    <img src="./images/activites/notredame.jpg" alt="Notre-Dame-de-la-Garde">
-    <div class="card-activites-txt responsive-tablette"><h3 class="card-title">Notre-Dame-de-la-Garde</h2></div>
-</article>
-</a>
+                <a href="">
+                    <article class="card2">
+                        <img src="./images/activites/vieuxport.jpg" alt="Vieux port de Marseille">
+                        <div class="card-activites-txt">
+                            <h3 class="card-title">Vieux-port</h3>
+                         </div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="card2">
+                        <img src="./images/activites/pomegues.jpg" alt="Fort de Pomègues">
+                        <div class="card-activites-txt">
+                            <h3 class="card-title">Fort de Pomègues</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="card2">
+                        <img src="./images/activites/calanques.jpg" alt="Parc national des Calanques">
+                        <div class="card-activites-txt responsive-tablette">
+                            <h3 class="card-title">Parc national des Calanques</h3>
+                        </div>
+                    </article>
+                </a>
+                <a href="">
+                    <article class="card2">
+                        <img src="./images/activites/notredame.jpg" alt="Notre-Dame-de-la-Garde">
+                        <div class="card-activites-txt responsive-tablette">
+                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </article>
+                </a>
+            </div>
         </section>
         <!-- footer -->
         <footer class="margin-top footer">
@@ -381,7 +400,8 @@
                 </ul>
             </div>
         </footer>
+    </main>
     </div>
-      </main>
+      
   </body>
 </html>
