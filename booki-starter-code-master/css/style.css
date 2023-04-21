@@ -159,6 +159,7 @@ nav {
 .filtre-recherche {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .filtre-recherche ul {
@@ -185,14 +186,11 @@ nav {
   border: 2px solid #d9d9d9;
   border-radius: 25px;
   padding: 15px 19px 15px 10px;
+  margin-top: -10px;
 }
 
 .margin-top-filtres {
   margin-top: -10px;
-}
-
-#margin-top-filtres {
-  margin-top: 50px;
 }
 
 /* infos */
@@ -398,13 +396,14 @@ nav {
 @media (max-width: 1024px) {
   /* section recherche  */
 
-  #responsive-filtres {
-    margin-left: -70px;
-    margin-top: 50px;
+  .filtre-recherche {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
   }
 
-  .filtre-bulle {
-    padding: 17px 30px;
+  .responsive-filtres {
+    margin: 27px 15px 0px -20px;
   }
 
   /* hébergements et populaires */
@@ -539,20 +538,17 @@ nav {
 
   /* filtres */
 
-  #responsive-filtres {
-    margin: 30px 10px 10px -20px;
+  .responsive-filtres {
+    margin: 0px 10px 10px -20px;
   }
 
-  #responsive-rom {
+  #responsive-mobile {
     margin-top: 20px;
   }
 
   #responsive-fami {
-    padding-right: 59px;
-  }
-
-  #responsive-pep {
     margin-top: 20px;
+    padding-right: 47px;
   }
 
   .info {
@@ -571,7 +567,7 @@ nav {
 
   .hebergements-and-populaires section {
     border-radius: 0px;
-}
+  }
   .card-title {
     font-size: 16px;
   }
@@ -590,7 +586,7 @@ nav {
   }
 
   .populaires-cards a {
-    width: 97%;
+    width: 100%;
   }
 
   .populaires-cards img {
@@ -635,21 +631,21 @@ nav {
 
   #mobile-order-6 {
     order: 6;
-    }
+  }
 
-    #mobile-order-7 {
-        order: 7;
-        }
+  #mobile-order-7 {
+    order: 7;
+  }
 
-/* Section activité */
+  /* Section activité */
 
-.activites-cards {
-flex-direction: column;
-}
+  .activites-cards {
+    flex-direction: column;
+  }
 
-.activites-cards a {
-width: 100%;
-}
+  .activites-cards a {
+    width: 100%;
+  }
 
   .activites-cards img {
     height: 141px;
@@ -660,11 +656,11 @@ width: 100%;
   }
 
   .footer {
-flex-direction: column;
-}
+    flex-direction: column;
+  }
 
-.footer-colonne {
+  .footer-colonne {
     width: auto;
     padding: 30px 0px 15px 30px;
-    }
+  }
 }
